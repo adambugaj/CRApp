@@ -5,6 +5,7 @@ module.exports = (env) => {
   const isProduction = env === 'production';
   const CSSExtract = new ExtractTextPlugin('styles.css');
   return {
+    context: path.join(__dirname, "public"),
     entry: '../src/app.js',
     output: {
       path: path.join(__dirname, 'public'),
