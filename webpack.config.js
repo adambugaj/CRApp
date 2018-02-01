@@ -11,8 +11,7 @@ module.exports = (env) => {
       filename: 'bundle.js'
     },
     resolve: {
-    extensions: [ '', '.js' ],
-    ...
+    extensions: [ '', '.js' ]
   },
     module: {
       rules: [{
