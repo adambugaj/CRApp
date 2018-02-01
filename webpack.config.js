@@ -5,9 +5,9 @@ module.exports = (env) => {
   const isProduction = env === 'production';
   const CSSExtract = new ExtractTextPlugin('styles.css');
   return {
-    entry: path.resolve(__dirname, 'app.js'),
+    entry: '../src/app.js',
     output: {
-      path: path.resolve(__dirname, 'public'),
+      path: path.join(__dirname, 'public'),
       filename: 'bundle.js'
     },
     module: {
