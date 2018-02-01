@@ -7,12 +7,9 @@ module.exports = (env) => {
   return {
     entry: './src/app.js',
     output: {
-      path: path.join(__dirname, 'public'),
+      path: path.resolve(__dirname, 'app.js'),
       filename: 'bundle.js'
     },
-    resolve: {
-    extensions: [ '', '.js' ]
-  },
     module: {
       rules: [{
         loader: 'babel-loader',
